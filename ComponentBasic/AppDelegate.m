@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "JPGuideCenter.h"
+#import "JPLauncher.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    NSMutableArray *paths = [NSMutableArray array];
+    [paths addObject:@"app_0"];
+    [paths addObject:@"app_1"];
+    [paths addObject:@"app_2"];
+    [paths addObject:@"app_3"];
+    
+    //引导
+    [[JPGuideCenter defaultCenter] showInWindow:self.window
+                                         images:paths
+                                       complete:^{}];
+    
+    //广告页
+    [[JPLauncher defaultLanucher] showInWindow:self.window
+                                        imgUrl:@"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg"
+                                  timeInterval:5
+                                  detailParams:nil
+                                      complete:^(JPLaunchercompleteType type) {
+                                          NSLog(@"完成类型是：%d", type);
+                                      }];
+    
     return YES;
 }
 
