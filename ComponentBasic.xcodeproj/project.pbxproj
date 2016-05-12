@@ -25,7 +25,6 @@
 		A3D48F251CAA703200881E27 /* app_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D48F211CAA703200881E27 /* app_2@2x.png */; };
 		A3D48F261CAA703200881E27 /* app_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D48F221CAA703200881E27 /* app_3@2x.png */; };
 		A3D48F2A1CAA756100881E27 /* JPLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D48F291CAA756100881E27 /* JPLauncher.m */; };
-		A3D48F2E1CAA82A600881E27 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D48F2D1CAA82A600881E27 /* BBLaunchAdMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +73,6 @@
 		A3D48F221CAA703200881E27 /* app_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_3@2x.png"; sourceTree = "<group>"; };
 		A3D48F281CAA756100881E27 /* JPLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLauncher.h; sourceTree = "<group>"; };
 		A3D48F291CAA756100881E27 /* JPLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLauncher.m; sourceTree = "<group>"; };
-		A3D48F2C1CAA82A600881E27 /* BBLaunchAdMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLaunchAdMonitor.h; sourceTree = "<group>"; };
-		A3D48F2D1CAA82A600881E27 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +133,6 @@
 				A3D48EEA1CAA4FF800881E27 /* Assets.xcassets */,
 				A3D48EEC1CAA4FF800881E27 /* LaunchScreen.storyboard */,
 				A3D48EEF1CAA4FF800881E27 /* Info.plist */,
-				A3D48F2B1CAA82A600881E27 /* LaunchAd-2 */,
 				A3D48F161CAA669400881E27 /* pic */,
 				A3D48EDE1CAA4FF800881E27 /* Supporting Files */,
 			);
@@ -200,15 +196,6 @@
 				A3D48F291CAA756100881E27 /* JPLauncher.m */,
 			);
 			path = JPLauncher1.0.0;
-			sourceTree = "<group>";
-		};
-		A3D48F2B1CAA82A600881E27 /* LaunchAd-2 */ = {
-			isa = PBXGroup;
-			children = (
-				A3D48F2C1CAA82A600881E27 /* BBLaunchAdMonitor.h */,
-				A3D48F2D1CAA82A600881E27 /* BBLaunchAdMonitor.m */,
-			);
-			path = "LaunchAd-2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D48F2E1CAA82A600881E27 /* BBLaunchAdMonitor.m in Sources */,
 				A3D48EE61CAA4FF800881E27 /* ViewController.m in Sources */,
 				A3D48F2A1CAA756100881E27 /* JPLauncher.m in Sources */,
 				A3D48EE31CAA4FF800881E27 /* AppDelegate.m in Sources */,
