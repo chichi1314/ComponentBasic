@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'GuideCenter.'
   s.homepage = 'https://github.com/chichi1314'
   s.author   = { 'chichi1314' => '865489714@qq.com' }
-  s.source   = { :git => 'https://github.com/chichi1314/ComponentBasic.git', :commit => 'e823ae89ddd8f64ead95dffdfe1010a27f2a0e66' }
+  s.source   = { :git => 'https://github.com/chichi1314/ComponentBasic.git', :tag => '0.0.1' }
   s.platform = :ios  
   s.source_files = 'ComponentBasic/JPGuide1.0.0/*.{h,m}'
   s.resources = "ComponentBasic/pic/*.png"
